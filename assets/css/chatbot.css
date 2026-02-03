@@ -2,7 +2,7 @@
 
 .chatbot-container {
   position: fixed;
-  bottom: 20px;
+  bottom: 90px;
   right: 20px;
   z-index: 9999;
   font-family: 'Roboto', sans-serif;
@@ -225,6 +225,12 @@
     width: calc(100vw - 30px);
     height: 500px;
     bottom: 70px;
+  }
+
+  /* Keep the chatbot toggle above the scroll-top button on small screens */
+  .chatbot-container {
+    bottom: 90px;
+    right: 15px;
   }
 
   .chatbot-message-content {
